@@ -41,7 +41,7 @@ jobs:
           fi
           git -c protocol.version=2 init --quiet "$GITHUB_WORKSPACE"
           git -C "$GITHUB_WORKSPACE" remote add tether \
-            https://github.com/moneycaringcoder/herdr-tether.git
+            https://github.com/mcc0x/herdr-tether.git
           git -C "$GITHUB_WORKSPACE" fetch --quiet --no-tags --depth=1 tether "$GITHUB_SHA"
           git -C "$GITHUB_WORKSPACE" checkout --quiet --detach "$GITHUB_SHA"
           test "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)" = "$GITHUB_SHA"
@@ -97,7 +97,7 @@ jobs:
           fi
           git -c protocol.version=2 init --quiet "$GITHUB_WORKSPACE"
           git -C "$GITHUB_WORKSPACE" remote add tether \
-            https://github.com/moneycaringcoder/herdr-tether.git
+            https://github.com/mcc0x/herdr-tether.git
           git -C "$GITHUB_WORKSPACE" fetch --quiet --no-tags --depth=1 tether "$GITHUB_SHA"
           git -C "$GITHUB_WORKSPACE" checkout --quiet --detach "$GITHUB_SHA"
           test "$(git -C "$GITHUB_WORKSPACE" rev-parse HEAD)" = "$GITHUB_SHA"

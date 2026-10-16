@@ -23,14 +23,14 @@ Choose one source:
 **Stable v0.8.0.** Install the release tag:
 
 ```sh
-herdr plugin install moneycaringcoder/herdr-tether --ref v0.8.0
+herdr plugin install mcc0x/herdr-tether --ref v0.8.0
 ```
 
 **Development (`main`).** Use this to follow the public development line, not
 a release:
 
 ```sh
-herdr plugin install moneycaringcoder/herdr-tether --ref main
+herdr plugin install mcc0x/herdr-tether --ref main
 ```
 
 **Immutable reviewed commit.** Replace the value below with the full commit SHA
@@ -38,7 +38,7 @@ you reviewed:
 
 ```sh
 TETHER_REV=FULL_COMMIT_SHA_YOU_REVIEWED
-herdr plugin install moneycaringcoder/herdr-tether --ref "$TETHER_REV"
+herdr plugin install mcc0x/herdr-tether --ref "$TETHER_REV"
 ```
 
 Herdr previews the source and build commands before confirmation. Review them,
@@ -107,14 +107,14 @@ Install the standalone CLI when you want administration commands in your shell.
 The stable release is:
 
 ```sh
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \
+cargo install --git https://github.com/mcc0x/herdr-tether \
   --tag v0.8.0 --locked herdr-tether
 ```
 
 For development `main`:
 
 ```sh
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \
+cargo install --git https://github.com/mcc0x/herdr-tether \
   --branch main --locked herdr-tether
 ```
 
@@ -122,7 +122,7 @@ For an immutable reviewed commit:
 
 ```sh
 TETHER_REV=FULL_COMMIT_SHA_YOU_REVIEWED
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \
+cargo install --git https://github.com/mcc0x/herdr-tether \
   --rev "$TETHER_REV" --locked herdr-tether
 ```
 
@@ -223,7 +223,7 @@ Reinstall the desired reviewed revision to update both managed checkout and
 build. Herdr previews it again before confirmation:
 
 ```sh
-herdr plugin install moneycaringcoder/herdr-tether --ref main
+herdr plugin install mcc0x/herdr-tether --ref main
 ```
 
 Before installing an older version, back up Tether's configuration and state. A newer schema may not be understood by older code.

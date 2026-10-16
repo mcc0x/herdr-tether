@@ -160,13 +160,13 @@ class TargetTagTests(unittest.TestCase):
 class ReadmeInstallIdentityTests(unittest.TestCase):
     def test_candidate_accepts_main_only_or_complete_stable_install_paths(self) -> None:
         main_only = """\
-herdr plugin install moneycaringcoder/herdr-tether --ref main
+herdr plugin install mcc0x/herdr-tether --ref main
 Use a full commit SHA for a reproducible candidate checkout.
 """
         complete = """\
 Stable v0.3.0:
-herdr plugin install moneycaringcoder/herdr-tether --ref v0.3.0
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \
+herdr plugin install mcc0x/herdr-tether --ref v0.3.0
+cargo install --git https://github.com/mcc0x/herdr-tether \
   --tag v0.3.0 --locked herdr-tether
 """
         validate_readme_install(main_only, "v0.3.0", release=False)
@@ -202,7 +202,7 @@ cargo install --git https://example.invalid/repo --tag v0.3.0 --locked
         )
 
     def test_hermes_install_requires_stable_main_and_exact_sha_paths(self) -> None:
-        base = "https://raw.githubusercontent.com/moneycaringcoder/herdr-tether"
+        base = "https://raw.githubusercontent.com/mcc0x/herdr-tether"
         complete = f"""\
 Stable:
 {base}/v0.3.0/integrations/hermes/SKILL.md
@@ -229,8 +229,8 @@ TETHER_SKILL_REF=FULL_COMMIT_SHA_YOU_REVIEWED
 
     def test_release_requires_both_tagged_install_paths(self) -> None:
         complete = """\
-herdr plugin install moneycaringcoder/herdr-tether --ref v0.3.0 --yes
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \\
+herdr plugin install mcc0x/herdr-tether --ref v0.3.0 --yes
+cargo install --git https://github.com/mcc0x/herdr-tether \\
   --tag v0.3.0 --locked herdr-tether
 """
         validate_readme_install(complete, "v0.3.0", release=True)

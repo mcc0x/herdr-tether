@@ -5,7 +5,7 @@
 <p align="center"><strong>Keep local and remote terminal workloads running when the view goes away.</strong></p>
 
 <p align="center">
-  <a href="https://github.com/moneycaringcoder/herdr-tether/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/moneycaringcoder/herdr-tether/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/mcc0x/herdr-tether/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/mcc0x/herdr-tether/actions/workflows/ci.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-0f766e.svg"></a>
   <a href="https://github.com/herdrdev/herdr"><img alt="Herdr 0.8.0 or newer" src="https://img.shields.io/badge/Herdr-0.8.0%2B-172033.svg"></a>
   <img alt="Platforms: macOS and Linux" src="https://img.shields.io/badge/platforms-macOS%20%7C%20Linux-475569.svg">
@@ -47,14 +47,14 @@ shows the source and build commands for review before you confirm.
 **Stable v0.8.0.** Install the release tag:
 
 ```sh
-herdr plugin install moneycaringcoder/herdr-tether --ref v0.8.0
+herdr plugin install mcc0x/herdr-tether --ref v0.8.0
 ```
 
 **Development (`main`).** This follows the public development line, not a
 release:
 
 ```sh
-herdr plugin install moneycaringcoder/herdr-tether --ref main
+herdr plugin install mcc0x/herdr-tether --ref main
 ```
 
 **Immutable reviewed commit.** Replace the value with the full commit SHA you
@@ -62,7 +62,7 @@ reviewed; unlike a branch, that revision cannot move:
 
 ```sh
 TETHER_REV=FULL_COMMIT_SHA_YOU_REVIEWED
-herdr plugin install moneycaringcoder/herdr-tether --ref "$TETHER_REV"
+herdr plugin install mcc0x/herdr-tether --ref "$TETHER_REV"
 ```
 
 Whichever source you choose, run the setup action once:
@@ -80,14 +80,14 @@ setup, press your Herdr prefix followed by `t`.
 Want the standalone administration commands too? The stable install is:
 
 ```sh
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \
+cargo install --git https://github.com/mcc0x/herdr-tether \
   --tag v0.8.0 --locked herdr-tether
 ```
 
 For development `main`:
 
 ```sh
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \
+cargo install --git https://github.com/mcc0x/herdr-tether \
   --branch main --locked herdr-tether
 ```
 
@@ -95,7 +95,7 @@ For an immutable reviewed commit:
 
 ```sh
 TETHER_REV=FULL_COMMIT_SHA_YOU_REVIEWED
-cargo install --git https://github.com/moneycaringcoder/herdr-tether \
+cargo install --git https://github.com/mcc0x/herdr-tether \
   --rev "$TETHER_REV" --locked herdr-tether
 ```
 
@@ -119,20 +119,20 @@ directly from this repository.
 **Stable v0.8.0:**
 
 ```sh
-hermes skills install https://raw.githubusercontent.com/moneycaringcoder/herdr-tether/v0.8.0/integrations/hermes/SKILL.md
+hermes skills install https://raw.githubusercontent.com/mcc0x/herdr-tether/v0.8.0/integrations/hermes/SKILL.md
 ```
 
 **Development (`main`):**
 
 ```sh
-hermes skills install https://raw.githubusercontent.com/moneycaringcoder/herdr-tether/main/integrations/hermes/SKILL.md
+hermes skills install https://raw.githubusercontent.com/mcc0x/herdr-tether/main/integrations/hermes/SKILL.md
 ```
 
 **Immutable reviewed commit:**
 
 ```sh
 TETHER_SKILL_REF=FULL_COMMIT_SHA_YOU_REVIEWED
-hermes skills install "https://raw.githubusercontent.com/moneycaringcoder/herdr-tether/${TETHER_SKILL_REF}/integrations/hermes/SKILL.md"
+hermes skills install "https://raw.githubusercontent.com/mcc0x/herdr-tether/${TETHER_SKILL_REF}/integrations/hermes/SKILL.md"
 ```
 
 The [skill source](integrations/hermes/SKILL.md) describes Tether's public
