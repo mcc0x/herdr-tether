@@ -17,13 +17,13 @@ body:
         If what you found is a security problem rather than a malfunction —
         Tether acting on a workload it does not own, something private reaching
         state or logs, or anything crossing the boundary described in
-        [SECURITY.md](https://github.com/moneycaringcoder/herdr-tether/blob/main/SECURITY.md)
+        [SECURITY.md](https://github.com/mcc0x/herdr-tether/blob/main/SECURITY.md)
         — report it privately through
-        [security advisories](https://github.com/moneycaringcoder/herdr-tether/security/advisories/new)
+        [security advisories](https://github.com/mcc0x/herdr-tether/security/advisories/new)
         instead of here.
 
         Worth trying first: `herdr-tether doctor`, and the
-        [troubleshooting guide](https://github.com/moneycaringcoder/herdr-tether/blob/main/docs/troubleshooting.md),
+        [troubleshooting guide](https://github.com/mcc0x/herdr-tether/blob/main/docs/troubleshooting.md),
         which
         covers `prefix+t` doing nothing, unreachable hosts, unreachable
         workloads, and records that outlive the command.

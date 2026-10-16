@@ -53,9 +53,9 @@ appropriate.
 
 ## Reporting
 
-Report unacceptable behaviour to the maintainer, [@moneycaringcoder](https://github.com/moneycaringcoder),
+Report unacceptable behaviour to the maintainer, [@mcc0x](https://github.com/mcc0x),
 through GitHub — either by opening a
-[private security advisory](https://github.com/moneycaringcoder/herdr-tether/security/advisories/new),
+[private security advisory](https://github.com/mcc0x/herdr-tether/security/advisories/new),
 which is private and does not have to concern a vulnerability, or by contacting
 them through their GitHub profile.
 

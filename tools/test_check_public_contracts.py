@@ -226,9 +226,9 @@ class CuratedCliExampleTests(unittest.TestCase):
         markdown = """\
 ```sh
 herdr-tether orchestration list --json
-cargo install --git https://github.com/moneycaringcoder/herdr-tether --tag v0.3.0 --locked herdr-tether
-cargo install --git https://github.com/moneycaringcoder/herdr-tether --branch main --locked herdr-tether
-cargo install --git https://github.com/moneycaringcoder/herdr-tether --rev 0123456789abcdef0123456789abcdef01234567 --locked herdr-tether
+cargo install --git https://github.com/mcc0x/herdr-tether --tag v0.3.0 --locked herdr-tether
+cargo install --git https://github.com/mcc0x/herdr-tether --branch main --locked herdr-tether
+cargo install --git https://github.com/mcc0x/herdr-tether --rev 0123456789abcdef0123456789abcdef01234567 --locked herdr-tether
 ```
 """
         examples = extract_cli_examples(markdown, "README.md")

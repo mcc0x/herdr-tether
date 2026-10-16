@@ -2,13 +2,13 @@
 
 ## Supported versions
 
-Security fixes are provided for the latest version published through the project's [GitHub releases](https://github.com/moneycaringcoder/herdr-tether/releases). Development snapshots and older versions are not supported security branches.
+Security fixes are provided for the latest version published through the project's [GitHub releases](https://github.com/mcc0x/herdr-tether/releases). Development snapshots and older versions are not supported security branches.
 
 Reproduce a suspected issue on the latest published version when it is safe to do so. A report affecting an older version is still useful when the same behavior may remain current.
 
 ## Reporting a vulnerability
 
-Report suspected vulnerabilities through [GitHub private vulnerability reporting](https://github.com/moneycaringcoder/herdr-tether/security/advisories/new). Do not disclose exploit details, credentials, hostnames, repository paths, terminal output, or other sensitive data in a public issue.
+Report suspected vulnerabilities through [GitHub private vulnerability reporting](https://github.com/mcc0x/herdr-tether/security/advisories/new). Do not disclose exploit details, credentials, hostnames, repository paths, terminal output, or other sensitive data in a public issue.
 
 A useful report includes:
 

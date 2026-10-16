@@ -170,7 +170,7 @@ def validate_readme_install(
 
 def validate_hermes_install(text: str, tag: str, *, surface: str) -> None:
     skill_path = "integrations/hermes/SKILL.md"
-    base = "https://raw.githubusercontent.com/moneycaringcoder/herdr-tether"
+    base = "https://raw.githubusercontent.com/mcc0x/herdr-tether"
     required = {
         "stable tag": f"{base}/{tag}/{skill_path}",
         "development main": f"{base}/main/{skill_path}",
